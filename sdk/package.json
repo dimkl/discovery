@@ -1,0 +1,32 @@
+{
+  "name": "discovery-sdk",
+  "version": "0.0.1",
+  "description": "Generate a sdk with validation via consuming a discovery api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimkl/discovery.git"
+  },
+  "keywords": [
+    "discovery",
+    "api",
+    "well-known",
+    "discovery-sdk",
+    "client-sdk"
+  ],
+  "author": "Dimitris Klouvas <dimitris.klouvas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimkl/discovery/issues"
+  },
+  "homepage": "https://github.com/dimkl/discovery#readme",
+  "dependencies": {
+    "ajv": "^6.10.0"
+  },
+  "engines": {
+    "node": ">=10.15.0"
+  }
+}

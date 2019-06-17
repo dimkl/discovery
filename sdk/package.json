@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Generate a sdk with validation via consuming a discovery api",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -13,7 +13,7 @@ app.use(async (ctx, next) => {
     return await next();
   } catch (err) {
     console.error(err);
-    ctx.body = error.output;
+    ctx.body = err.output;
   }
 });
 
@@ -30,6 +30,7 @@ app.use(apiRouter.routes());
 
 app.listen(8080);
 
-console.log(apiRouter.stack.map(i => i.path));
+console.log('\nApp is initialized in http://localhost:8080\n');
+console.log('routes: ', apiRouter.stack.map(i => i.path));
 
 module.exports = app;

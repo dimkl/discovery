@@ -14,8 +14,7 @@
     "discovery",
     "api",
     "well-known",
-    "discovery-sdk",
-    "client-sdk"
+    "discovery-api"
   ],
   "author": "Dimitris Klouvas <dimitris.klouvas@gmail.com>",
   "license": "MIT",
@@ -23,10 +22,6 @@
     "url": "https://github.com/dimkl/discovery/issues"
   },
   "homepage": "https://github.com/dimkl/discovery#readme",
-  "dependencies": {
-    "ajv": "^6.10.0",
-    "boom": "^7.3.0"
-  },
   "engines": {
     "node": ">=10.15.0"
   }

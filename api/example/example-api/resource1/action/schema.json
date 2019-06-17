@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "required": ["firstname", "lastname", "name", "email"],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "firstname": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 128
+    },
+    "lastname": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "email": {
+      "type": "string",
+      "maxLength": 255,
+      "format": "email"
+    },
+    "unconfirmed_email": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "maxLength": 255,
+          "format": "email"
+        }
+      ]
+    },
+    "password": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "confirmed": {
+      "type": "boolean"
+    }
+  }
+}

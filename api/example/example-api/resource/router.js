@@ -1,0 +1,18 @@
+const Router = require('koa-router');
+const discoveryApi = require('../discovery');
+const { validationMiddleware } = require('../../../index');
+const { resourceActionPath } = require('./paths');
+const { schema, handler } = require('./action');
+
+const router = new Router();
+
+router.get(resourceActionPath(), validationMiddleware(schema), handler);
+discoveryApi.register({
+  resource: 'resource',
+  action: 'action',
+  method: 'get',
+  uri: resourceActionPath(),
+  schema
+});
+
+module.exports = router;

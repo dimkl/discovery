@@ -1,6 +1,6 @@
 const Router = require('koa-router');
 const discoveryApi = require('../discovery');
-const { validationMiddleware } = require('../../../../validation');
+const { validationMiddleware } = require('../../validation');
 const { resourceActionPath } = require('./paths');
 const { schema, handler } = require('./action');
 

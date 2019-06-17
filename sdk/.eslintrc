@@ -1,0 +1,62 @@
+{
+  "extends": "workable-node",
+  "root": true,
+  "plugins": [],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "globals": {
+    "stripTimestamps": false,
+    "fakeClientCredentialsAuth": false,
+    "fakeUserIdTokenAuth": false,
+    "testDataCreator": false,
+    "mockCtx": false,
+    "mockCsrf": false,
+    "mockInteractionDetails": false,
+    "mockInteractionFinished": false,
+    "mockOauthPayload": false,
+    "withEnvironmentVariable": false,
+    "fakeShieldSession": false,
+    "extractAccessToken": false,
+    "extractIdToken": false
+  },
+  "rules": {
+    "no-process-env": "off",
+    "no-console": "warn",
+    "quotes": ["error", "single"],
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "comments": 120,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-await-in-loop": "off",
+    "no-return-await": "off",
+    "require-await": "off",
+    "prefer-destructuring": "off"
+  },
+  "overrides": [
+    {
+      "files": [ "*.test.js" ],
+      "rules": {
+        "max-len": [
+          "warn",
+          {
+            "code": 120,
+            "comments": 120,
+            "ignoreTemplateLiterals": true,
+            "ignoreRegExpLiterals": true
+          }
+        ]
+      }
+    }
+  ]
+}

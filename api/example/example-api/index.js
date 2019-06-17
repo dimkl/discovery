@@ -8,9 +8,6 @@ const router = new Router();
 router.use(resourceRouter.routes());
 router.use(resource1Router.routes());
 
-router.get(exampleApiDiscovery.route, (ctx, next) => {
-  ctx.body = exampleApiDiscovery.schema;
-  return next();
-});
+exampleApiDiscovery.expose(router);
 
 module.exports = { router };

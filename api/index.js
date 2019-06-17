@@ -7,16 +7,17 @@ const omitUndefined = obj => {
 };
 
 class DiscoveryAPI {
-  constructor() {
+  constructor(basePath) {
+    this._basePath = basePath || '/';
     this._schema = [];
   }
 
   setApiBasePath(basePath) {
-    this._basePath = basePath;
+    this._basePath = basePath || '/';
   }
 
   get route() {
-    return join(this._basePath || '/', '.well-known/api.json');
+    return join(this._basePath, '.well-known/api.json');
   }
 
   get schema() {
@@ -39,6 +40,13 @@ class DiscoveryAPI {
         schema
       })
     );
+  }
+
+  expose(router) {
+    router.get(this.route, (ctx, next) => {
+      ctx.body = this.schema;
+      return next();
+    });
   }
 }
 

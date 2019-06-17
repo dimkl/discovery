@@ -1,10 +1,10 @@
 {
-  "name": "exaple-discovery-api",
+  "name": "example-discovery-api",
   "version": "0.0.1",
   "description": "example of discovery api",
   "main": "app.js",
   "scripts": {
-    "debug": "nodemon --inspect app.js"
+    "start": "node app.js"
   },
   "author": "Dimitris Klouvas <dimitris.klouvas@gmail.com>",
   "homepage": "https://github.com/dimkl/discovery#readme",
@@ -13,9 +13,6 @@
     "koa-router": "*",
     "boom": "^7.2.0",
     "koa": "^2.7"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19"
   },
   "engines": {
     "node": ">=10.15.0"

@@ -1,6 +1,6 @@
 {
   "name": "discovery-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate a well known discovery api by registering an endpoint and the validation rules",
   "main": "index.js",
   "files": [

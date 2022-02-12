@@ -9,7 +9,7 @@
   "author": "Dimitris Klouvas <dimitris.klouvas@gmail.com>",
   "homepage": "https://github.com/dimkl/discovery#readme",
   "dependencies": {
-    "ajv": "^6.10.0",
+    "ajv": "^6.12.3",
     "koa-router": "*",
     "boom": "^7.2.0",
     "koa": "^2.7"

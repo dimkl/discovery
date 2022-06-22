@@ -28,7 +28,7 @@
   "homepage": "https://github.com/dimkl/discovery#readme",
   "dependencies": {
     "ajv": "^6.10.0",
-    "got": "^9.6.0",
+    "got": "^11.8.5",
     "query-string": "^6.7"
   },
   "engines": {
